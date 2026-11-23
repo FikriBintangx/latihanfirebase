@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194613325888",
+    "project_id": "macha-umkm",
+    "storage_bucket": "macha-umkm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194613325888:android:3c9e56365f8d878448afa5",
+        "android_client_info": {
+          "package_name": "com.fikribintang.login_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194613325888-tnfd6q2spa1gp5citjof3ntsb4ibom63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFOFU01I2No4d9KG6gscAV-g2-DluJlMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194613325888-tnfd6q2spa1gp5citjof3ntsb4ibom63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
