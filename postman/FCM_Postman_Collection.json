@@ -1,0 +1,114 @@
+{
+  "info": {
+    "name": "FCM HTTP v1 - Materi 7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Kirim ke Device (token)",
+      "request": {
+        "method": "POST",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{access_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": {\n    \"token\": \"{{fcm_token}}\",\n    \"notification\": {\n      \"title\": \"Halo Mahasiswa \ud83d\udc4b\",\n      \"body\": \"Ini notifikasi pertama dari Postman\"\n    },\n    \"data\": {\n      \"kategori\": \"pengumuman\",\n      \"id_pesan\": \"001\",\n      \"isi_lengkap\": \"Kuliah besok dimulai jam 19.00 di Lab 3\"\n    },\n    \"android\": {\n      \"priority\": \"high\",\n      \"notification\": {\n        \"channel_id\": \"high_importance_channel\"\n      }\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/v1/projects/{{project_id}}/messages:send",
+          "protocol": "https",
+          "host": [
+            "fcm",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "projects",
+            "{{project_id}}",
+            "messages:send"
+          ]
+        }
+      }
+    },
+    {
+      "name": "2. Kirim ke Topic kelas",
+      "request": {
+        "method": "POST",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{access_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": {\n    \"topic\": \"kelas\",\n    \"notification\": {\n      \"title\": \"Pengumuman Kelas\",\n      \"body\": \"Tugas FCM dikumpulkan minggu depan\"\n    },\n    \"data\": {\n      \"kategori\": \"tugas\",\n      \"deadline\": \"2026-11-30\"\n    },\n    \"android\": {\n      \"priority\": \"high\",\n      \"notification\": {\n        \"channel_id\": \"high_importance_channel\"\n      }\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/v1/projects/{{project_id}}/messages:send",
+          "protocol": "https",
+          "host": [
+            "fcm",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "projects",
+            "{{project_id}}",
+            "messages:send"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "project_id",
+      "value": "macha-umkm"
+    },
+    {
+      "key": "access_token",
+      "value": "TEMPEL_ACCESS_TOKEN_OAUTH_DI_SINI"
+    },
+    {
+      "key": "fcm_token",
+      "value": "TEMPEL_FCM_TOKEN_DARI_APP_DI_SINI"
+    }
+  ]
+}
