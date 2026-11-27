@@ -151,17 +151,16 @@ class _LoginScreenState extends State<LoginScreen> {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Container(
-                      padding: const EdgeInsets.all(3),
+                      width: 64,
+                      height: 64,
                       decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: const Color(0xFF2563EB),
-                          width: 2,
-                        ),
+                        color: const Color(0xFFE8F0FF),
+                        borderRadius: BorderRadius.circular(18),
                       ),
-                      child: const CircleAvatar(
-                        radius: 34,
-                        backgroundImage: AssetImage(kProfileAsset),
+                      child: const Icon(
+                        Icons.lock_person_rounded,
+                        size: 32,
+                        color: Color(0xFF2563EB),
                       ),
                     ),
                   ),
@@ -177,10 +176,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 6),
                   const Text(
-                    '$kStudentName • $kStudentNim ($kStudentClass)',
+                    'Masuk untuk melanjutkan ke akun Anda.',
                     style: TextStyle(
-                      fontSize: 13.5,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
                       color: Color(0xFF64748B),
                     ),
                   ),

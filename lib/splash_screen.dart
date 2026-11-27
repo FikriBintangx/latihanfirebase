@@ -64,27 +64,28 @@ class _SplashScreenState extends State<SplashScreen>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(4),
+                      width: 88,
+                      height: 88,
                       decoration: BoxDecoration(
-                        shape: BoxShape.circle,
+                        color: const Color(0xFF1E293B),
+                        borderRadius: BorderRadius.circular(26),
                         border: Border.all(
                           color: const Color(0xFF3B82F6),
-                          width: 2.5,
+                          width: 2,
                         ),
                       ),
-                      child: const CircleAvatar(
-                        radius: 52,
-                        backgroundImage: AssetImage(
-                          'assets/images/profile_biru.jpg',
-                        ),
+                      child: const Icon(
+                        Icons.notifications_active_rounded,
+                        size: 42,
+                        color: Color(0xFF60A5FA),
                       ),
                     ),
                     const SizedBox(height: 24),
                     const Text(
-                      kStudentName,
+                      'Latihan Firebase',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 24,
                         fontWeight: FontWeight.w800,
                         letterSpacing: -0.3,
                         color: Colors.white,
@@ -92,7 +93,7 @@ class _SplashScreenState extends State<SplashScreen>
                     ),
                     const SizedBox(height: 6),
                     const Text(
-                      '$kStudentNim • $kStudentClass',
+                      'Auth & Cloud Messaging',
                       style: TextStyle(
                         fontSize: 13.5,
                         fontWeight: FontWeight.w500,
