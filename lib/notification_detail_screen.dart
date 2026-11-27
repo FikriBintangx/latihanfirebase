@@ -12,9 +12,6 @@ class NotificationDetailScreen extends StatelessWidget {
       ..remove('title')
       ..remove('body');
 
-    final kategori = data['kategori']?.toString().toLowerCase();
-    final isPromo = kategori == 'promo';
-
     return Scaffold(
       backgroundColor: const Color(0xFFF6F7FB),
       appBar: AppBar(
@@ -38,48 +35,36 @@ class NotificationDetailScreen extends StatelessWidget {
                   width: 76,
                   height: 76,
                   decoration: BoxDecoration(
-                    color: isPromo
-                        ? const Color(0xFFFFF3E0)
-                        : const Color(0xFFE8F0FF),
+                    color: const Color(0xFFE8F0FF),
                     borderRadius: BorderRadius.circular(22),
                   ),
-                  child: Icon(
-                    isPromo
-                        ? Icons.shopping_cart_rounded
-                        : Icons.notifications_active_rounded,
+                  child: const Icon(
+                    Icons.notifications_active_rounded,
                     size: 40,
-                    color: isPromo
-                        ? const Color(0xFFEF6C00)
-                        : const Color(0xFF2563EB),
+                    color: Color(0xFF2563EB),
                   ),
                 ),
                 const SizedBox(height: 16),
-                if (kategori != null && kategori.isNotEmpty) ...[
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
-                    ),
-                    decoration: BoxDecoration(
-                      color: isPromo
-                          ? const Color(0xFFFFF3E0)
-                          : const Color(0xFFEFF4FF),
-                      borderRadius: BorderRadius.circular(999),
-                    ),
-                    child: Text(
-                      kategori.toUpperCase(),
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 1.1,
-                        color: isPromo
-                            ? const Color(0xFFE65100)
-                            : const Color(0xFF1D4ED8),
-                      ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFEFF6FF),
+                    borderRadius: BorderRadius.circular(999),
+                  ),
+                  child: const Text(
+                    'NOTIFICATION',
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 1.1,
+                      color: Color(0xFF1D4ED8),
                     ),
                   ),
-                  const SizedBox(height: 12),
-                ],
+                ),
+                const SizedBox(height: 12),
                 Text(
                   data['title']?.toString() ?? '-',
                   style: const TextStyle(

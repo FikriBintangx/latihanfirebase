@@ -38,9 +38,9 @@
 
   <rect x="490" y="182" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
   <text x="508" y="206" class="num">04</text>
-  <text x="532" y="206" class="card-title">Detail Notifikasi &amp; Ikon Promo</text>
+  <text x="532" y="206" class="card-title">Detail Notifikasi &amp; Data Payload</text>
   <text x="508" y="228" class="card-desc">Tap notifikasi membuka NotificationDetailScreen berisi title, body,</text>
-  <text x="508" y="246" class="card-desc">data payload, dan ikon keranjang otomatis untuk kategori promo.</text>
+  <text x="508" y="246" class="card-desc">badge NOTIFICATION, serta seluruh data payload secara terstruktur.</text>
 
   <!-- Row 3 -->
   <rect x="40" y="278" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
