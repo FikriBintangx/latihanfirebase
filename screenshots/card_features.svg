@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="100%">
+  <defs>
+    <style>
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 20px; font-weight: 800; fill: #0F172A; letter-spacing: -0.3px; }
+      .sec-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 13px; font-weight: 500; fill: #64748B; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #0F172A; }
+      .card-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 12.5px; font-weight: 400; fill: #475569; }
+      .num { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; fill: #2563EB; }
+      .cmd-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 700; fill: #64748B; letter-spacing: 0.5px; }
+      .cmd { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 600; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="438" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <text x="40" y="44" class="sec-title">Fitur yang Diimplementasikan</text>
+  <text x="40" y="65" class="sec-sub">Cakupan lengkap materi Pertemuan 8 (Authentication) dan Pertemuan 9 (Cloud Messaging)</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="86" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="58" y="110" class="num">01</text>
+  <text x="82" y="110" class="card-title">SplashScreen &amp; AuthWrapper</text>
+  <text x="58" y="132" class="card-desc">Layar pembuka animasi dengan transisi otomatis menuju status</text>
+  <text x="58" y="150" class="card-desc">autentikasi real-time berbasis authStateChanges().</text>
+
+  <rect x="490" y="86" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="508" y="110" class="num">02</text>
+  <text x="532" y="110" class="card-title">Firebase Authentication</text>
+  <text x="508" y="132" class="card-desc">Login &amp; logout Email/Password, opsi Ingat saya, toggle password,</text>
+  <text x="508" y="150" class="card-desc">serta profil user (foto, nama, UID, email &amp; terakhir login).</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="182" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="58" y="206" class="num">03</text>
+  <text x="82" y="206" class="card-title">FCM HTTP v1 (3 Skenario)</text>
+  <text x="58" y="228" class="card-desc">Foreground (flutter_local_notifications), Background (onMessageOpenedApp),</text>
+  <text x="58" y="246" class="card-desc">dan Terminated (getInitialMessage) pada channel high_importance_channel.</text>
+
+  <rect x="490" y="182" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="508" y="206" class="num">04</text>
+  <text x="532" y="206" class="card-title">Detail Notifikasi &amp; Ikon Promo</text>
+  <text x="508" y="228" class="card-desc">Tap notifikasi membuka NotificationDetailScreen berisi title, body,</text>
+  <text x="508" y="246" class="card-desc">data payload, dan ikon keranjang otomatis untuk kategori promo.</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="278" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="58" y="302" class="num">05</text>
+  <text x="82" y="302" class="card-title">FCM Token &amp; Topic Subscription</text>
+  <text x="58" y="324" class="card-desc">Tampil &amp; salin FCM Token langsung dari Dashboard serta tombol</text>
+  <text x="58" y="342" class="card-desc">Subscribe / Unsubscribe untuk broadcast topic "kelas".</text>
+
+  <rect x="490" y="278" width="430" height="82" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="508" y="302" class="num">06</text>
+  <text x="532" y="302" class="card-title">Postman &amp; Backend Sender</text>
+  <text x="508" y="324" class="card-desc">Dilengkapi koleksi Postman (postman/) dan backend pengirim notif</text>
+  <text x="508" y="342" class="card-desc">PHP, Python, &amp; Golang di folder notification_sender/.</text>
+
+  <!-- Bottom Run Strip -->
+  <rect x="40" y="376" width="880" height="42" rx="12" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="58" y="401" class="cmd-label">CARA MENJALANKAN</text>
+  <text x="220" y="401" class="cmd">flutter pub get &amp;&amp; flutter run</text>
+</svg>

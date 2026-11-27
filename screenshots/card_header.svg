@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 32px; font-weight: 800; fill: #0F172A; letter-spacing: -0.6px; }
+      .sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 14.5px; font-weight: 500; fill: #475569; }
+      .pill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 11.5px; font-weight: 700; fill: #1D4ED8; letter-spacing: 0.5px; }
+      .meta-label { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; font-weight: 600; fill: #64748B; letter-spacing: 0.6px; }
+      .meta-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="218" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <circle cx="885" cy="48" r="78" fill="#EFF6FF" opacity="0.9"/>
+  <circle cx="920" cy="110" r="46" fill="#DBEAFE" opacity="0.65"/>
+
+  <rect x="40" y="32" width="276" height="28" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="56" y="50" class="pill-text">PERTEMUAN 8 &amp; 9 • FLUTTER + FIREBASE</text>
+
+  <text x="40" y="100" class="title">Latihan Firebase — Auth &amp; Cloud Messaging</text>
+  <text x="40" y="128" class="sub">Implementasi Firebase Authentication, FCM HTTP v1 Push Notification, Topic Subscription &amp; Detail Payload</text>
+
+  <line x1="40" y1="150" x2="920" y2="150" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="40" y="175" class="meta-label">NAMA MAHASISWA</text>
+  <text x="40" y="196" class="meta-val">Fikri Bintang Purnomo</text>
+
+  <text x="360" y="175" class="meta-label">NIM</text>
+  <text x="360" y="196" class="meta-val">1122140142</text>
+
+  <text x="600" y="175" class="meta-label">KELAS</text>
+  <text x="600" y="196" class="meta-val">TI 24 SH SE</text>
+</svg>
